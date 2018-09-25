@@ -1,6 +1,7 @@
 ﻿using GContacts.Common;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,17 @@ namespace GContacts.ViewModels
         }
 
         public ICommand HamburgerCommand { get; set; }
+        public ICommand SearchTextChangedCommand { get; set; }
+        public ICommand AccountCommand { get; set; }
+        public ICommand AddContactCommand { get; set; }
+        public ICommand LabelCommand { get; set; }
+        public ICommand SettingsCommand { get; set; }
+        public ICommand SendFeedbackCommand { get; set; }
+        public ICommand HelpCommand { get; set; }
+
+        public ICommand SignOutCommand { get; set; }
+
+        //public ObservableCollection<ViewModels.Contact> Persons { get; private set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

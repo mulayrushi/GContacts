@@ -89,12 +89,6 @@
                                         <StackPanel Margin="10,0,0,0">
                                             <RadioButton x:Name="LabelRadioButton" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe316;" FontSize="18" Content="Lables" Command="{Binding LabelCommand}" CommandParameter="{Binding ElementName=LabelRadioButton}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />
                                             <ListView x:Name="LabelListView" MinHeight="200" ItemsSource="{Binding Congroup}">
-                                                <!--<ListView.Header>
-                                                <StackPanel Orientation="Horizontal" Height="40" Margin="12,0,0,0">
-                                                    <FontIcon Glyph="&#xe892;" Foreground="{StaticResource GoogleGray}" FontFamily="ms-appx:/Fonts/MaterialIcons.ttf#Material Icons" />
-                                                    <TextBlock Text="Freinds" Margin="12,0,0,0" VerticalAlignment="Center" />
-                                                </StackPanel>
-                                            </ListView.Header>-->
                                                 <ListView.ItemTemplate>
                                                     <DataTemplate>
                                                         <StackPanel Orientation="Horizontal" Margin="0" VerticalAlignment="Center" Height="50">
@@ -109,7 +103,7 @@
                                         <Rectangle Height="1" Fill="LightGray" />
 
                                         <StackPanel Margin="10,0,0,0">
-                                            <RadioButton x:Uid="ContactUid" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe7fb;" FontSize="18" Content="All contacts" Command="{Binding MapCommand}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />
+                                            <!--<RadioButton x:Uid="ContactUid" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe7fb;" FontSize="18" Content="All contacts" Command="{Binding MapCommand}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />-->
                                             <RadioButton x:Uid="ContactUid" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe8b8;" FontSize="18" Content="Settings" Command="{Binding SettingsCommand}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />
                                             <RadioButton x:Uid="ContactUid" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe626;" FontSize="18" Content="Send feedback" Command="{Binding SendFeedbackCommand}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />
                                             <RadioButton x:Uid="ContactUid" GroupName="SplitViewButtons" Style="{StaticResource NavRadioButtonStyleGoogle}" Tag="&#xe7fb;" FontSize="18" Content="Help" Command="{Binding HelpCommand}" FontFamily="ms-appx:/Fonts/Roboto.ttf#Roboto" />
