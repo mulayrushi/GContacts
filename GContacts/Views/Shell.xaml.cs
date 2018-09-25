@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GContacts.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,12 @@ namespace GContacts.Views
     /// </summary>
     public sealed partial class Shell : Page
     {
-        public Shell()
+        public Shell(Frame frame, Windows.ApplicationModel.Activation.LaunchActivatedEventArgs launch)
         {
+            //this.contentFrame = frame;
             this.InitializeComponent();
+            this.ShellSplitView.Content = frame;
+            this.DataContext = new ShellViewModel();
         }
     }
 }
